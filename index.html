@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="/script.js" defer></script>
+  <title>Interactive pricing component</title>
+
+ 
+</head>
+<body>
+  <section id="all-content">
+
+    <header>
+      <div class="text-conent">
+        <h1>Simple, traffic-based pricing</h1>
+        <p>Sign-up for our 30-day trial , No credit card required</p>
+      </div>
+    </header>
+    <main>
+      <div class="text-header">
+        <p>100k pageviews</p>
+        <div class="average-count">
+          <h1>$16.00</h1>
+          <p>/month</p>
+        </div>
+      </div>
+ 
+      <div class="slider">
+        <div class="sliderValue">
+        </div>
+        <div class="field">
+          <input type="range" min="0" max="10" step="1">
+        </div>
+      </div>
+
+      <div class="options">
+        <p class="payment-text">Monthly billing</p>
+
+        <input type="radio" id="monthly" name="payment" value="monthly" checked>
+        <input type="radio" id="yearly" name="payment" value="yearly">
+        <p class="payment-text">Yearly biling</p>
+        <p class="discount-text" >25%discount</p>
+      </div>
+      
+      <div class="plans-content">
+        <div class="plans">
+          <div class="plan">
+            <img src="./images/icon-check.svg" alt="">
+            <p>Unlimited website</p>
+          </div>
+          <div class="plan">
+            <img src="./images/icon-check.svg" alt="">
+            <p>100% data ownership</p>
+          </div>
+          <div class="plan">
+            <img src="./images/icon-check.svg" alt="">
+            <p>Email reports</p>
+          </div>
+        </div>
+        <button>Start my trial</button>
+      </div>
+
+    </main>
+  </section>
+</body>
+</html>

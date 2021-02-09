@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap');
+
+*{
+    box-sizing: border-box;
+    outline: none;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: 'Manrope';
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    background: url('./images/bg-pattern.svg') no-repeat center;
+    background-size: cover;
+    
+}
+
+h1, p {
+    color: hsl(227, 35%, 25%);
+}
+
+#all-content{
+    margin: 0 auto;
+    width: 80%;
+    max-width: 700px;
+    
+}
+
+#all-content header{
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('./images/pattern-circles.svg') no-repeat center;
+    background-size: 120px;
+}
+
+#all-content header .text-conent{
+    height: 50px;
+}
+
+#all-content header p{
+    font-size: 13px;
+}
+
+#all-content main{
+    height: 300px;
+    background-color: hsl(230, 100%, 99%);
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 20px 29px 0px;
+    text-align: start;
+    padding: 35px;
+}
+
+#all-content main .text-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+#all-content main .text-header  h1{
+    font-size: 34px;
+}
+
+#all-content main .text-header p{
+    font-size: 15px;
+}
+
+#all-content main .text-header .average-count {
+    display: flex;
+    align-items: center;
+}
+
+.slider {
+    margin-bottom: 20px;
+}
+
+.slider .sliderValue{
+    position: relative;
+    width: 100%;
+}
+
+.slider .field{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10px;
+}
+
+.slider .field input {
+    -webkit-appearance: none;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(173, 173, 173);
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    /* hsl(174, 77%, 80%)   background color bar */
+    
+}
+
+.slider .field input::after{
+    content: "";
+    position: absolute;
+    width:30%;
+    height: 100%;
+    background-color: hsl(174, 77%, 80%);
+    color: black;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    border-radius: 50px;
+}
+
+.slider .field input::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 30px;
+    height: 30px;
+    background-color: hsl(174, 77%, 80%);
+    border-radius: 50%;
+    background-image: url('./images/icon-slider.svg');
+    background-repeat: no-repeat;
+    background-position: center;    
+    position: relative;
+    z-index: 2;
+
+}
+
+.slider .field input::-webkit-slider-thumb:active{
+    background-color: hsl(174, 86%, 45%);
+}
+
+
+.options{
+    /* overflow-x: hidden; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 12px;
+}
+
+.options p, input{
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.options .payment-text{
+    color:hsl(225, 20%, 60%);
+}
+
+.options .discount-text{
+    color: hsl(15, 100%, 70%);
+    background-color: hsl(14, 92%, 95%);
+    padding: 0 10px;
+    border-radius: 10px;
+}
+
+.plans-content {
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.plans-content .plans .plan{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.plans-content .plans .plan p{
+    color:hsl(225, 20%, 60%);
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+.plans-content button{
+    padding: 10px 40px;
+    border-radius: 25px;
+    border: none;
+    background-color: hsl(227, 35%, 25%);
+    color: white;
+    cursor: pointer;
+    transition: background-color ease .1s;
+
+}
+
+.plans-content button:hover{
+
+    background-color: hsl(227, 35%, 25%, .94);
+
+}
+
+@media only screen and (max-width: 375px){
+
+    #all-content{
+        width: 90%;
+    }
+
+
+    #all-content main{
+        height: 60%;
+        
+    }
+
+    #all-content main .text-header {
+        flex-direction: column;
+    }
+
+    #all-content .plans-content {
+        display: flex;
+        flex-direction: column;
+        margin-top: 15px;
+    }
+    
+}
