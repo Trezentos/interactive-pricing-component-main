@@ -21,9 +21,10 @@
     </header>
     <main>
       <div class="text-header">
-        <p>100k pageviews</p>
+        <p><label class="pageviewsValue" >100K</label> pageviews</p>
         <div class="average-count">
-          <h1>$16.00</h1>
+          <h1>$</h1>
+          <h1 class="price">16.00</h1>
           <p>/month</p>
         </div>
       </div>
@@ -32,15 +33,18 @@
         <div class="sliderValue">
         </div>
         <div class="field">
-          <input type="range" min="0" max="10" step="1">
+          <input class="input-values" type="range" min="0" max="4" step="1">
         </div>
       </div>
 
       <div class="options">
         <p class="payment-text">Monthly billing</p>
 
-        <input type="radio" id="monthly" name="payment" value="monthly" checked>
-        <input type="radio" id="yearly" name="payment" value="yearly">
+        <div class="theme-switcher">
+          <input type="checkbox" id="switcher"> 
+          <label class="switcher-label" for=switcher>switch</label>
+        </div>
+
         <p class="payment-text">Yearly biling</p>
         <p class="discount-text" >25%discount</p>
       </div>
